@@ -1,6 +1,11 @@
 const express = require('express');
+const cors = require('cors');
 const router = express.Router()
 require('express-group-routes')
+
+
+router.use(express.json());
+router.use(cors());
 
 
 
